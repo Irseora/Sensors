@@ -1,0 +1,8 @@
+item,peak_TOPS_int8,power_min_W,power_max_W,price_USD,source_or_status
+Jetson Orin Nano 8GB (proxy),67,7,25,399,"NVIDIA Jetson Orin page (TOPS, W); cnx-software 22 Jul 2026 (1KU price)"
+Jetson Orin NX 16GB (proxy),157,10,40,999,same
+Jetson AGX Orin 64GB (proxy),275,15,60,2999,same
+"Zone controller base (MCU, power, eFuses, housing)",0,2,5,60,assumption
+Zone controller + vision accelerator option,20,5,15,180,assumption
+Smart-camera processor option (per camera),5,2,4,40,assumption; 5 TOPS anchored to Mobileye EyeQ6 Lite (5 DL TOPS)
+Ethernet switch port (in zone or central),0,0.3,0.6,4,assumption

@@ -1,0 +1,47 @@
+id,name,class,x_m,y_m,raw_output_Mbit_s,processed_output_Mbit_s,processing_TOPS,note
+C1,Front camera 8 MP (windshield),camera,1.60,0.00,2880.0,0.5,5.0,raw = 8e6 px x 30 fps x 12 bit
+C2,"Surround camera 3 MP, left mirror",camera,1.90,0.95,1080.0,0.5,2.0,
+C3,"Surround camera 3 MP, right mirror",camera,1.90,-0.95,1080.0,0.5,2.0,
+C4,"Surround camera 3 MP, front bumper",camera,0.05,0.18,1080.0,0.5,2.0,
+C5,"Surround camera 3 MP, rear",camera,4.75,0.00,1080.0,0.5,2.0,
+C6,Driver monitoring camera 2 MP,camera,1.70,0.35,600.0,0.1,1.0,10 bit
+R1,Front long-range radar,radar,0.05,-0.12,30,0.5,1.0,raw column = detection point cloud
+R2,Corner radar front-left,radar,0.20,0.85,30,0.5,1.0,
+R3,Corner radar front-right,radar,0.20,-0.85,30,0.5,1.0,
+R4,Corner radar rear-left,radar,4.60,0.85,30,0.5,1.0,
+R5,Corner radar rear-right,radar,4.60,-0.85,30,0.5,1.0,
+L1,Roof LiDAR (front edge of roof),lidar,1.75,0.00,153.6,1.0,8.0,1.2 M points/s x 16 B
+U1,Ultrasonic front 1,ultrasonic,0.10,0.80,0.002,0.002,0.0,usually LIN or point-to-point
+U2,Ultrasonic front 2,ultrasonic,0.10,0.50,0.002,0.002,0.0,usually LIN or point-to-point
+U3,Ultrasonic front 3,ultrasonic,0.10,0.20,0.002,0.002,0.0,usually LIN or point-to-point
+U4,Ultrasonic front 4,ultrasonic,0.10,-0.20,0.002,0.002,0.0,usually LIN or point-to-point
+U5,Ultrasonic front 5,ultrasonic,0.10,-0.50,0.002,0.002,0.0,usually LIN or point-to-point
+U6,Ultrasonic front 6,ultrasonic,0.10,-0.80,0.002,0.002,0.0,usually LIN or point-to-point
+U7,Ultrasonic rear 1,ultrasonic,4.70,0.80,0.002,0.002,0.0,
+U8,Ultrasonic rear 2,ultrasonic,4.70,0.50,0.002,0.002,0.0,
+U9,Ultrasonic rear 3,ultrasonic,4.70,0.20,0.002,0.002,0.0,
+U10,Ultrasonic rear 4,ultrasonic,4.70,-0.20,0.002,0.002,0.0,
+U11,Ultrasonic rear 5,ultrasonic,4.70,-0.50,0.002,0.002,0.0,
+U12,Ultrasonic rear 6,ultrasonic,4.70,-0.80,0.002,0.002,0.0,
+B1,Headlamp left,body,0.20,0.70,0.05,0.05,0.0,"CAN FD, LIN or 10BASE-T1S"
+B2,Headlamp right,body,0.20,-0.70,0.05,0.05,0.0,"CAN FD, LIN or 10BASE-T1S"
+B3,Door module front-left,body,2.15,0.88,0.05,0.05,0.0,"CAN FD, LIN or 10BASE-T1S"
+B4,Door module front-right,body,2.15,-0.88,0.05,0.05,0.0,"CAN FD, LIN or 10BASE-T1S"
+B5,Door module rear-left,body,2.90,0.90,0.05,0.05,0.0,"CAN FD, LIN or 10BASE-T1S"
+B6,Door module rear-right,body,2.90,-0.90,0.05,0.05,0.0,"CAN FD, LIN or 10BASE-T1S"
+B7,Seat module driver,body,2.30,0.40,0.05,0.05,0.0,"CAN FD, LIN or 10BASE-T1S"
+B8,Seat module passenger,body,2.30,-0.40,0.05,0.05,0.0,"CAN FD, LIN or 10BASE-T1S"
+B9,HVAC control,body,1.25,0.00,0.05,0.05,0.0,"CAN FD, LIN or 10BASE-T1S"
+B10,Tail lamp left,body,4.65,0.70,0.05,0.05,0.0,"CAN FD, LIN or 10BASE-T1S"
+B11,Tail lamp right,body,4.65,-0.70,0.05,0.05,0.0,"CAN FD, LIN or 10BASE-T1S"
+B12,Tailgate / rear body,body,4.50,0.30,0.05,0.05,0.0,"CAN FD, LIN or 10BASE-T1S"
+H1,Brake control (ESC),chassis,0.60,0.40,1.0,1.0,0.0,"safety-relevant, CAN FD"
+H2,Electric power steering,chassis,0.80,-0.20,1.0,1.0,0.0,"safety-relevant, CAN FD"
+H3,Battery management (BMS),chassis,2.80,0.00,1.0,1.0,0.0,"safety-relevant, CAN FD"
+H4,Rear drive inverter,chassis,4.00,0.00,1.0,1.0,0.0,"safety-relevant, CAN FD"
+H5,Airbag control,chassis,2.10,0.00,1.0,1.0,0.0,"safety-relevant, CAN FD"
+CC,Central computer (fixed position),compute,2.40,0.00,0,0,0,level 1
+ZF,Zone site front,zone_site,0.70,0.00,0,0,0,candidate level-2 position
+ZL,Zone site left,zone_site,2.40,0.60,0,0,0,
+ZR,Zone site right,zone_site,2.40,-0.60,0,0,0,
+ZB,Zone site rear,zone_site,4.20,0.00,0,0,0,

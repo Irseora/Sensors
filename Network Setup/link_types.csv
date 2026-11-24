@@ -1,0 +1,9 @@
+link_type,capacity_Mbit_s,cable_USD_per_m,cable_g_per_m,USD_per_link_end,topology,price_basis
+LIN,0.02,0.05,8,0.6,bus (1 commander + 15),PHY price: assumption; rate ISO 17987
+CAN FD,5,0.15,15,0.6,bus,"transceiver 0.45-0.68 USD (TI, 1ku); cable: assumption"
+10BASE-T1S,10,0.2,15,1.6,multidrop bus,"PHY 1.1 USD (TI DP83TD535-Q1, 1ku); cable: assumption"
+100BASE-T1,100,0.2,15,1.9,point-to-point,"PHY 1.4 USD (TI DP83TC1103-Q1, 1ku); cable: assumption"
+1000BASE-T1,1000,0.6,30,7.0,point-to-point,"PHY 6 USD (TI DP83TG721R-Q1, 1ku); cable: assumption"
+10GBASE-T1,10000,1.2,40,25.0,point-to-point,PHY price: assumption (no public price found)
+SerDes 3G,3000,0.8,35,6.5,point-to-point (coax),"serializer 5.22 USD (ADI MAX96717R, 1ku); deserializer + cable: assumption"
+SerDes 6G,6000,0.8,35,12.0,point-to-point (coax),"assumption, scaled from 3G part"
