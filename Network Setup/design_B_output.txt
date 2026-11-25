@@ -1,0 +1,51 @@
+irseora@poppy:~/Documents/Repos/Sensors/Network Setup$ python3 design_calc.py design_B.json 
+link                                   to   type          load Mbit/s      cap  length m
+C1                                     CC   SerDes 6G         2880.00     6000      1.04
+C2                                     CC   SerDes 3G         1080.00     3000      1.89
+C3                                     CC   SerDes 3G         1080.00     3000      1.89
+C4                                     ZF   SerDes 3G         1080.00     3000      1.08
+C5                                     ZB   SerDes 3G         1080.00     3000      0.71
+C6                                     CC   SerDes 3G          600.00     3000      1.36
+R1                                     ZF   100BASE-T1          30.00      100      1.00
+R2                                     ZF   100BASE-T1          30.00      100      1.75
+R3                                     ZF   100BASE-T1          30.00      100      1.75
+R4                                     ZB   100BASE-T1          30.00      100      1.62
+R5                                     ZB   100BASE-T1          30.00      100      1.62
+L1                                     CC   1000BASE-T1        153.60     1000      0.84
+bus[U1,U2,U3,U4,U5,U6]                 ZF   LIN                  0.01        0      3.64
+bus[U7,U8,U9,U10,U11,U12]              ZB   LIN                  0.01        0      3.38
+bus[B1,B2,B9]                          ZF   CAN FD               0.15        5      4.09
+bus[B3,B4,B5,B6,B7,B8,H3,H5]           CC   CAN FD               2.30        5      6.50
+bus[B10,B11,B12]                       ZB   CAN FD               0.15        5      2.99
+bus[H1]                                CC   CAN FD               1.00        5      2.86
+bus[H2]                                CC   CAN FD               1.00        5      2.34
+bus[H4]                                CC   CAN FD               1.00        5      2.08
+backbone ZF                            CC   CAN FD               2.16        5      2.21
+backbone ZB                            CC   CAN FD               1.66        5      2.34
+
+Bus segments, cable order from one end to the other:
+  ZF LIN segment 1: U1 - U2 - U3 - ZF - U4 - U5 - U6  (3.64 m)
+  ZB LIN segment 2: U7 - U8 - U9 - ZB - U10 - U11 - U12  (3.38 m)
+  ZF CAN FD segment 1: B9 - ZF - B1 - B2  (4.09 m)
+  CC CAN FD segment 2: B5 - B3 - B7 - H5 - CC - H3 - B8 - B4 - B6  (6.50 m)
+  ZB CAN FD segment 4: B10 - B12 - ZB - B11  (2.99 m)
+  CC CAN FD segment 5: CC - H1  (2.86 m)
+  CC CAN FD segment 6: CC - H2  (2.34 m)
+  CC CAN FD segment 7: CC - H4  (2.08 m)
+
+Cost breakdown (USD, per vehicle):
+  cables                                       12.60
+  link ends (PHY/transceiver/connector)       146.60
+  switch ports                                 40.00
+  zone controllers                            360.00
+  smart sensors                                 0.00
+  central compute                             798.00
+  TOTAL                                      1357.20
+
+Cable length total: 49.0 m   cable mass: 0.86 kg   max electrical power (compute, zones, smart sensors): 80 W
+TOPS needed: CC=38, ZF=5, ZB=4   (usable = peak × 0.5)
+Central compute: 134 peak TOPS, 67 usable, 38 needed -> margin 29 TOPS
+Redundancy: 4 computer(s) with AI capacity; if the largest fails, 53.5 usable TOPS remain (need 20)
+Highest link utilisation: 60.0 % (bus[U1,U2,U3,U4,U5,U6], LIN); limit 70 %
+
+CHECKS: all passed

@@ -10,12 +10,12 @@
         "ZB"
     ],
     "zone_compute": {
-        "ZF": "base",
-        "ZB": "base"
+        "ZF": "vision",
+        "ZB": "vision"
     },
     "backbone": {
-        "ZF": "1000BASE-T1",
-        "ZB": "1000BASE-T1"
+        "ZF": "CAN FD",
+        "ZB": "CAN FD"
     },
     "central_compute": [
         "Jetson Orin Nano 8GB (proxy)",
@@ -38,14 +38,14 @@
             "processing": "central"
         },
         "C4": {
-            "attach": "CC",
+            "attach": "ZF",
             "link": "SerDes 3G",
-            "processing": "central"
+            "processing": "zone"
         },
         "C5": {
-            "attach": "CC",
+            "attach": "ZB",
             "link": "SerDes 3G",
-            "processing": "central"
+            "processing": "zone"
         },
         "C6": {
             "attach": "CC",
@@ -55,27 +55,27 @@
         "R1": {
             "attach": "ZF",
             "link": "100BASE-T1",
-            "processing": "central"
+            "processing": "zone"
         },
         "R2": {
             "attach": "ZF",
             "link": "100BASE-T1",
-            "processing": "central"
+            "processing": "zone"
         },
         "R3": {
             "attach": "ZF",
             "link": "100BASE-T1",
-            "processing": "central"
+            "processing": "zone"
         },
         "R4": {
             "attach": "ZB",
             "link": "100BASE-T1",
-            "processing": "central"
+            "processing": "zone"
         },
         "R5": {
             "attach": "ZB",
             "link": "100BASE-T1",
-            "processing": "central"
+            "processing": "zone"
         },
         "L1": {
             "attach": "CC",
