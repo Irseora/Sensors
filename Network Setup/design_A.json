@@ -1,0 +1,237 @@
+{
+    "_comment": "All central",
+    "routing_factor": 1.3,
+    "headroom": 0.3,
+    "compute_utilisation": 0.5,
+    "central_fusion_TOPS": 20,
+    "redundancy_TOPS": 20,
+    "zones": [],
+    "zone_compute": {},
+    "backbone": {},
+    "central_compute": [
+        "Jetson Orin Nano 8GB (proxy)",
+        "Jetson Orin Nano 8GB (proxy)"
+    ],
+    "nodes": {
+        "C1": {
+            "attach": "CC",
+            "link": "SerDes 6G",
+            "processing": "central"
+        },
+        "C2": {
+            "attach": "CC",
+            "link": "SerDes 3G",
+            "processing": "central"
+        },
+        "C3": {
+            "attach": "CC",
+            "link": "SerDes 3G",
+            "processing": "central"
+        },
+        "C4": {
+            "attach": "CC",
+            "link": "SerDes 3G",
+            "processing": "central"
+        },
+        "C5": {
+            "attach": "CC",
+            "link": "SerDes 3G",
+            "processing": "central"
+        },
+        "C6": {
+            "attach": "CC",
+            "link": "SerDes 3G",
+            "processing": "central"
+        },
+        "R1": {
+            "attach": "CC",
+            "link": "100BASE-T1",
+            "processing": "central"
+        },
+        "R2": {
+            "attach": "CC",
+            "link": "100BASE-T1",
+            "processing": "central"
+        },
+        "R3": {
+            "attach": "CC",
+            "link": "100BASE-T1",
+            "processing": "central"
+        },
+        "R4": {
+            "attach": "CC",
+            "link": "100BASE-T1",
+            "processing": "central"
+        },
+        "R5": {
+            "attach": "CC",
+            "link": "100BASE-T1",
+            "processing": "central"
+        },
+        "L1": {
+            "attach": "CC",
+            "link": "1000BASE-T1",
+            "processing": "central"
+        },
+        "U1": {
+            "attach": "CC",
+            "link": "LIN",
+            "processing": "none",
+            "segment": 1
+        },
+        "U2": {
+            "attach": "CC",
+            "link": "LIN",
+            "processing": "none",
+            "segment": 1
+        },
+        "U3": {
+            "attach": "CC",
+            "link": "LIN",
+            "processing": "none",
+            "segment": 1
+        },
+        "U4": {
+            "attach": "CC",
+            "link": "LIN",
+            "processing": "none",
+            "segment": 1
+        },
+        "U5": {
+            "attach": "CC",
+            "link": "LIN",
+            "processing": "none",
+            "segment": 1
+        },
+        "U6": {
+            "attach": "CC",
+            "link": "LIN",
+            "processing": "none",
+            "segment": 1
+        },
+        "U7": {
+            "attach": "CC",
+            "link": "LIN",
+            "processing": "none",
+            "segment": 2
+        },
+        "U8": {
+            "attach": "CC",
+            "link": "LIN",
+            "processing": "none",
+            "segment": 2
+        },
+        "U9": {
+            "attach": "CC",
+            "link": "LIN",
+            "processing": "none",
+            "segment": 2
+        },
+        "U10": {
+            "attach": "CC",
+            "link": "LIN",
+            "processing": "none",
+            "segment": 2
+        },
+        "U11": {
+            "attach": "CC",
+            "link": "LIN",
+            "processing": "none",
+            "segment": 2
+        },
+        "U12": {
+            "attach": "CC",
+            "link": "LIN",
+            "processing": "none",
+            "segment": 2
+        },
+        "B1": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "B2": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "B3": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "B4": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "B5": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "B6": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "B7": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "B8": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "B9": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "B10": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "B11": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "B12": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "H1": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none",
+            "segment": 3
+        },
+        "H2": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none",
+            "segment": 4
+        },
+        "H3": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        },
+        "H4": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none",
+            "segment": 5
+        },
+        "H5": {
+            "attach": "CC",
+            "link": "CAN FD",
+            "processing": "none"
+        }
+    }
+}
